@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Marathon{
+public static void main(String args[]){
+int x = 26;
+int y = 385;
+
+float z = y/1760;
+float k = z+x;
+
+System.out.println(k*1.609f);
+
+}}
