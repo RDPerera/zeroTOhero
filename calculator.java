@@ -11,16 +11,21 @@ public class calculator
 		char op=sc.next().charAt(0);
 		System.out.print("Enter Number 2 :");
 		b=sc.nextInt();
-		if (op=='+')
-			ans=a+b;
-		else if(op=='-')
-			ans=a-b;
-		else if(op=='*')
-			ans=a*b;
-		else if(op=='/')
-			ans=a/b;
-		else
-			ans=8888;
-		System.out.println("Answer is"+ans);
+        if (b==0){
+            System.out.println("Zero devision error !");
+        }
+        else{
+            if (op=='+')
+                ans=a+b;
+            else if(op=='-')
+                ans=a-b;
+            else if(op=='*')
+                ans=a*b;
+            else if(op=='/')
+                ans=a/b;
+            else
+                ans=8888;
+            System.out.println("Answer is"+ans);
+        }
 	}
 }
