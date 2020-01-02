@@ -3,7 +3,7 @@ public class calculator
 {
 	public static void main(String [] args)
 	{
-		int a,b,ans;
+		int a,b;
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter Number 1 :");
 		a=sc.nextInt();
@@ -15,17 +15,14 @@ public class calculator
             System.out.println("Zero devision error !");
         }
         else{
-            if (op=='+')
-                ans=a+b;
-            else if(op=='-')
-                ans=a-b;
-            else if(op=='*')
-                ans=a*b;
-            else if(op=='/')
-                ans=a/b;
-            else
-                ans=8888;
-            System.out.println("Answer is"+ans);
+            switch(op)
+            {
+                case '+' : System.out.println(a+b);break;
+                case '-' : System.out.println(a-b);break;
+                case '*' : System.out.println(a*b);break;
+                case '/' : System.out.println(a/b);break;
+                default : System.out.println("Enter Valid OP");
+            }
         }
 	}
 }

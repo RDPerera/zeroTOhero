@@ -10,7 +10,7 @@ public class ContCalc
         System.out.println("           Enter # to Exit            ");
         System.out.println("======================================");
         System.out.print("Enter Number : ");
-        sc.nextFloat()
+        sc.nextFloat();
         while()
         sc.nextInt()
         while
